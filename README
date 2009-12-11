@@ -1,0 +1,11 @@
+An example of using the Boxcar API (via the Growl service, for redirections).
+
+1) Install the 'httparty' gem if you don't already have it.  (gem install httparty).
+2) Replace 'XXXREPLACE@MEXXX' with your username, and 'XXX' with your password on line 5.
+3) Adjust the notification parameters.
+
+The API itself uses HTTP BASIC authorization with your Boxcar e-mail address and password.  The URL is https://boxcar.io/notifications.  The parameters available to be passed in are:
+
+* notification[from_screen_name] - This sets who or what application the notification is from.
+* notification[message] - The notification message body.  This may be up to 140 characters, and will be trimmed if longer.
+* notification[from_remote_service_id] - Optional.  Pass in a unique integer to guarantee that a duplicate notification will not be delivered.
