@@ -1,6 +1,6 @@
 An example of using the Boxcar API (via the Growl service, for redirections).
 
-For the Ruby example:
+### For the Ruby example:
 
 1) Install the 'httparty' gem if you don't already have it.  (gem install httparty).
 2) Replace 'XXXREPLACE@MEXXX' with your username, and 'XXX' with your password on line 5.
@@ -11,3 +11,19 @@ The API itself uses HTTP BASIC authorization with your Boxcar e-mail address and
 * notification[from_screen_name] - This sets who or what application the notification is from.
 * notification[message] - The notification message body.  This may be up to 140 characters, and will be trimmed if longer.
 * notification[from_remote_service_id] - Optional.  Pass in a unique integer to guarantee that a duplicate notification will not be delivered.
+
+
+### For the PHP (class.boxcar.php) example:
+
+By gpetit, see  http://help.boxcar.io/discussions/developers/15-php-class-to-send-notification-in-boxcar for additional help.
+
+
+### For the REALBasic (REALBasic2010_deliver_notification.rbp) example:
+
+By Sascha Schneppmueller, see http://help.boxcar.io/discussions/problems/334-boxcar-growl-plugin-for-windows for additional help.
+
+Requires the CURLS plugin by Monkeybread Software.
+
+###
+
+Many, many thanks to gpetit and Sascha Schneppmueller.  Without your contributions we would not have a PHP or REALBasic plugin.
