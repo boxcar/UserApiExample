@@ -1,5 +1,7 @@
 An example of using the Boxcar API (via the Growl service, for redirections).
 
+For the Ruby example:
+
 1) Install the 'httparty' gem if you don't already have it.  (gem install httparty).
 2) Replace 'XXXREPLACE@MEXXX' with your username, and 'XXX' with your password on line 5.
 3) Adjust the notification parameters.
